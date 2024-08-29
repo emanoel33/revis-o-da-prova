@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar e Remover Itens</title>
+    <script>
+        function adicionarItem() {
+            const ul = document.getElementById('minhaLista');
+            const li = document.createElement('li');
+            li.textContent = 'Novo item';
+            ul.appendChild(li);
+        }
+
+        function removerItem() {
+            const ul = document.getElementById('minhaLista');
+            if (ul.children.length > 0) {
+                ul.removeChild(ul.lastChild);
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="minhaLista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="adicionarItem()">Adicionar Item</button>
+    <button onclick="removerItem()">Remover Último Item</button>
+</body>
+</html>

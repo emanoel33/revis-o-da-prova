@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="c:\Users\p.silva\Desktop\images.jpg">
+    <script>
+        class Carro {
+    constructor(marca, modelo, ano, cor) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+    }
+
+    descrever() {
+        return `Marca: ${this.marca}, Modelo: ${this.modelo}, Ano: ${this.ano}, Cor: ${this.cor}`;
+    }
+}
+
+const meuCarro = new Carro('CHEVROLET', 'CELTA', 2017, 'ROSA');
+console.log(meuCarro.descrever());
+
+    </script>
+    
+</body>
+</html>

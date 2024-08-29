@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Parágrafos</title>
+    <script>
+        window.onload = function() {
+            const paragrafos = document.querySelectorAll('p');
+            paragrafos.forEach(paragrafo => {
+                paragrafo.textContent = 'Parágrafo alterado pelo JS';
+            });
+        }
+    </script>
+</head>
+<body>
+    <p>Primeiro parágrafo.</p>
+    <p>Segundo parágrafo.</p>
+    <p>Terceiro parágrafo.</p>
+</body>
+</html>
